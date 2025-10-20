@@ -1,0 +1,27 @@
+@mixin Display() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin Btn() {
+  /* Frame */
+width: 150px;
+height: 40px;
+  box-sizing: border-box;
+
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+
+  /* Buy CrypAppy */
+
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+
+  color: #ffffff;
+  background:inherit;
+}

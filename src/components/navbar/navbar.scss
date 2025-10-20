@@ -1,0 +1,68 @@
+@import "../../styles/mixin.scss";
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #010225;
+  padding: 20px 0;
+
+  &__wrapper {
+    @include Display();
+    width: 1200px;
+    margin: auto;
+    border: 1px solid;
+  }
+
+  &__list {
+    @include Display();
+    gap: 40px;
+  }
+
+  &__burger {
+    display: none;
+  }
+
+  &__link {
+    /* Benefits */
+
+    font-family: "League Spartan";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+
+    color: #ffffff;
+    transition: all 0.4s linear;
+
+    &:hover {
+      color: #777ad4;
+    }
+  }
+  &__btn {
+    @include Btn();
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    &__wrapper {
+      width: 95%;
+    }
+
+    &__list {
+      display: none;
+    }
+    &__burger {
+      display: block;
+      color: white;
+      font-size: 30px;
+    }
+    &__btn {
+      display: none;
+    }
+    &__logo {
+      width: 120px;
+    }
+  }
+}
